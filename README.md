@@ -26,12 +26,12 @@ your url is: https://gqgh.localtunnel.me
 ### Installation
 
 ```
-npm install
+$ npm install
 ```
 
 ### Run Server
 ```
-node index.js
+$ node index.js
 ```
 
 ## Developing a Plugin
