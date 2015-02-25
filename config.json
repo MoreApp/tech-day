@@ -1,8 +1,8 @@
 {
-  "tunnel" : "https://xusucfiljc.localtunnel.me",
+  "tunnel" : null,
   "plugin" : {
-    "namespace" : "com.moreapp",
-    "key" : "awesomeness",
-    "name" : "Awesome"
+    "namespace" : null, // Example: "nl.avisi.matstijl"
+    "key" : null, //Example: "matstijl"
+    "name" : null //Example: "Mats is Awesome"
   }
 }
