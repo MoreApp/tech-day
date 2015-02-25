@@ -1,0 +1,8 @@
+{
+  "tunnel" : "https://xusucfiljc.localtunnel.me",
+  "plugin" : {
+    "namespace" : "com.moreapp",
+    "key" : "awesomeness",
+    "name" : "Awesome"
+  }
+}

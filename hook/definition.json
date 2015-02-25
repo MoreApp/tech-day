@@ -1,0 +1,48 @@
+{
+  "endpoint" : {
+    "handle" : "IGNORED",
+    "status" : "IGNORED",
+    "test" : "IGNORED",
+    "arguments" : []
+  },
+  "configuration" : [
+    {
+      "type" : "text",
+      "key" : "jiraEndpoint",
+      "defaultValue" : null,
+      "required" : true,
+      "name" : "JIRA Something",
+      "description" : "This is the server address where your JIRA instance runs"
+    },
+    {
+      "type" : "lookup_value",
+      "key" : "ticketType",
+      "defaultValue" : "bug",
+      "required" : true,
+      "name" : "Ticket Type",
+      "description" : "The type for the ticket that will be created",
+      "configuration" : {
+        "options" : [
+          {
+            "id" : "bug",
+            "value" : "Bug"
+          },
+          {
+            "id" : "rfc",
+            "value" : "Request for Change"
+          }
+        ],
+        "multiple" : false
+      }
+    },
+    {
+      "type" : "boolean",
+      "key" : "sendEmail",
+      "defaultValue" : true,
+      "required" : true,
+      "name" : "Send Email",
+      "description" : "Check if the JIRA administrator should receive an email when the ticket is created.",
+      "configuration" : {}
+    }
+  ]
+}
