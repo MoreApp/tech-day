@@ -2,47 +2,38 @@
   "endpoint" : {
     "handle" : "IGNORED",
     "status" : "IGNORED",
-    "test" : "IGNORED",
+    "test" : null,
     "arguments" : []
   },
   "configuration" : [
     {
       "type" : "text",
-      "key" : "jiraEndpoint",
+      "key" : "name",
       "defaultValue" : null,
       "required" : true,
-      "name" : "JIRA Something",
-      "description" : "This is the server address where your JIRA instance runs"
+      "name" : "Name",
+      "description" : "Enter your name Neo"
     },
     {
       "type" : "lookup_value",
-      "key" : "ticketType",
-      "defaultValue" : "bug",
+      "key" : "pillColor",
+      "defaultValue" : "blue",
       "required" : true,
-      "name" : "Ticket Type",
-      "description" : "The type for the ticket that will be created",
+      "name" : "Choose pill color",
+      "description" : "The color of the pill",
       "configuration" : {
         "options" : [
           {
-            "id" : "bug",
-            "value" : "Bug"
+            "id" : "blue",
+            "value" : "Blue"
           },
           {
-            "id" : "rfc",
-            "value" : "Request for Change"
+            "id" : "red",
+            "value" : "Red"
           }
         ],
         "multiple" : false
       }
-    },
-    {
-      "type" : "boolean",
-      "key" : "sendEmail",
-      "defaultValue" : true,
-      "required" : true,
-      "name" : "Send Email",
-      "description" : "Check if the JIRA administrator should receive an email when the ticket is created.",
-      "configuration" : {}
     }
   ]
 }
