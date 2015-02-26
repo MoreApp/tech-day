@@ -11,7 +11,7 @@ app.post('/handle', function (req, res) {
   console.log("Registration Id:", body.registration.data);
   console.log("Configuration", body.configuration);
 
-  res.json(null);
+  res.json({ status : 'SUCCESS'});
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
