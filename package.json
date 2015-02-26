@@ -12,6 +12,7 @@
     "node-zip": "^1.1.0",
     "oauth": "^0.9.12",
     "promise": "^6.1.0",
-    "form-data": "^0.2.0"
+    "form-data": "^0.2.0",
+    "request": "^2.53.0"
   }
 }
